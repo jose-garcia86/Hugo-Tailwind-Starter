@@ -6,6 +6,7 @@
 # https://jpanther.github.io/congo/docs/configuration/#theme-parameters
 
 colorScheme = "default"
+copyright = "Copyright &copy; 2022 Hugo-Tailwind Starter Kit. All Rights Reserved."
 defaultAppearance = "light" # valid options: light or dark
 autoSwitchAppearance = false
 

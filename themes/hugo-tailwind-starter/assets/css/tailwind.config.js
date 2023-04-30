@@ -1,9 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
-        "./content/**/*.{md,html}",
         "./layouts/**/*.html",
+        "./content/**/*.{html,md}",
         "./themes/hugo-tailwind-starter/layouts/**/*.html",
+        "./themes/hugo-tailwind-starter/content/**/*.{html,md}",
         ],
     theme: {
         extend: {},
