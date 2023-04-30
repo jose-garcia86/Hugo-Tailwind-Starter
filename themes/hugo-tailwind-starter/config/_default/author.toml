@@ -1,0 +1,15 @@
+# -- Author Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://jpanther.github.io/congo/docs/getting-started/
+
+name = "Author Name"
+image = "img/author.jpg"
+bio = "A little bit about you"
+email = "contact@example.org"
+location = "New York"
+phone = "(999) 999-9999"
+web = "https://yourwebsite.com"
+facebook = "https://facebook.com/example"
+twitter = "https://twitter.com/example"
+instagram = "https://instagram.com/example"
+github = "https://github.com/example"
