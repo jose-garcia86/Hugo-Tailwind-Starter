@@ -2,6 +2,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<!-- CSS -->
 {{ $styles := resources.Get "css/input.css" | postCSS (dict "config" "./assets/css/postcss.config.js") }}
 
 {{ if .Site.IsServer }}
@@ -10,5 +11,8 @@
   {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"/>
 {{ end }}
-
-<title>Hugo-Tailwind Starter</title>
+<!-- Site Description -->
+{{with .Description}}<meta name="description" content="{{.}}">{{end}}
+<!-- Site TItle -->
+{{ $title := default site.Title $.Title}}
+{{ with $title }}<title> {{.}} </title>{{ end }}
