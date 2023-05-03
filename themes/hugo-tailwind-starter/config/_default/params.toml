@@ -10,7 +10,7 @@ copyright = "Copyright &copy; 2022 Hugo-Tailwind Starter Kit. All Rights Reserve
 defaultAppearance = "light" # valid options: light or dark
 autoSwitchAppearance = false
 
-enableSearch = false
+enableSearch = true
 enableCodeCopy = false
 
 # robots = ""

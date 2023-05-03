@@ -1,4 +1,7 @@
 <!-- custom js -->
-{{ $js := resources.Get "js/index.js" | js.Build (dict "minify" hugo.IsProduction) }}
-
-<script type="text/javascript" src="{{ $js.RelPermalink }}" defer></script>
+{{ $customjs := resources.Get "js/index.js" | js.Build (dict "minify" hugo.IsProduction) }}
+<script type="text/javascript" src="{{ $customjs.RelPermalink }}" defer></script>
+<!-- feather js-->
+<script>
+    feather.replace();
+</script>
