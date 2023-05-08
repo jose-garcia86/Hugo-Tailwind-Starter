@@ -1,4 +1,4 @@
-{{ if .Site.Params.header.logo }}
+{{ if or (.Site.Params.header.logo)  (.Site.Params.footer.logo)}}
   {{ $logo := resources.Get .Site.Params.header.logo }}
   {{ if $logo }}
   <div id="logo">
@@ -8,7 +8,7 @@
   </div>
   {{ end }}
 {{ end }}
-{{ if .Site.Params.header.showTitle | default true }}
+{{ if or (.Site.Params.header.showTitle) (.Site.Params.footer.showTitle) }}
 <div id="logo">
     <a class="hover:text-pink-500" rel="me" href='{{ "/" | relLangURL }}'>
           {{ .Site.Title | markdownify | emojify }}

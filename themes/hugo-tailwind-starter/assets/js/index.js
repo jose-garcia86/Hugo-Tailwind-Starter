@@ -11,7 +11,7 @@ const searchBtn = document.getElementById('search-btn');
 const searchBar = document.getElementById('search-bar');
 
 searchBtn.addEventListener('click',function(){
-    toggleClasses( element2=searchBar, element3=searchBar, class2='block', class3='hidden');
+    toggleClasses( element2=searchBar, element3=searchBar, class2='flex', class3='hidden');
     }, false);
 
 
