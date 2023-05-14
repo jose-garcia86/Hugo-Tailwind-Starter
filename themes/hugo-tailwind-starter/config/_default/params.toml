@@ -24,6 +24,7 @@ enableCodeCopy = false
   # logo = "img/logo.jpg"
   showTitle = true
   showCopyright = true
+  showPowered = true
   #showScrollToTop = true
 
 [homepage]

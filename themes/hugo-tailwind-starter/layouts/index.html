@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $title := default site.Title $.Title}}
-<main class="mx-auto px-24 py-24 text-center">
-    {{ with $title }}<h1 class="text-3xl">{{.}}</h1> {{end}}
+<main class="h-[80vh] mx-auto px-24 py-24 text-center flex flex-col align-center justify-center ">
+    {{ with $title }}<h1 class="text-3xl my-8">{{.}}</h1> {{end}}
     {{ with .Param "subtitle" }}<div class="text-2xl">{{ . | humanize | markdownify }}</div> {{ end }}
 
     <!-- CTA Buton -->
